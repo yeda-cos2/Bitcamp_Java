@@ -45,12 +45,12 @@ System.out.println("i3(201/2):"+i3);
 
 //정수의 계산을 실수형에 대입시 결과는?
 double d1=201/2;
-System.out.println(d1(201/2):"+d1);
+System.out.println("d1(201/2):"+d1);
 
 //정수 int DataType 201을 실수 double Data Type으로 명시적 형변환 후
 //계산결과를 double Data Type으로 받으면 출력결과는?
 double d2=(double)201/2;
-System.out.println(d2(201/2): "+d2);
+System.out.println("d2(201/2): "+d2);
 
 }//end of main
 

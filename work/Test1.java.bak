@@ -1,8 +1,17 @@
 public class Test1 {
     public static void main(String args[]) {
         
-        System.out.println("ë‚˜ì˜ ì´ë¦„ì€ \""+args[0]+"\"ì…ë‹ˆë‹¤.");
-        System.out.println("\"" +args[0]+ "\"ì”¨ì˜ [hp]ëŠ” \""+args[1]+"\"ì…ë‹ˆë‹¤.");
-      
+		System.out.println("\n\n");
+        System.out.println("³ªÀÇ ÀÌ¸§Àº \""+args[0]+"\"ÀÔ´Ï´Ù.");
+        System.out.println("\"" +args[0]+ "\"¾¾ÀÇ [hp]´Â \""+args[1]+"\"ÀÔ´Ï´Ù.");
+
+
+		String name=args[0];
+		String hp=args[1];
+
+		System.out.println("³ªÀÇ ÀÌ¸§Àº \""+name+"\"ÀÔ´Ï´Ù.");
+        System.out.println("\"" +name+ "\"¾¾ÀÇ [hp]´Â \""+hp+"\"ÀÔ´Ï´Ù.");
+
+		
     }
 }
