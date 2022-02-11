@@ -7,7 +7,7 @@ public static void main(String[] args){
         System.out.println(j+"*"+i+"="+j*i);
     }
     
-    for(;;){
+    for(;;){ //무한루프
         System.out.println("여기는 반복문내부의 무한루프");
     }
 }

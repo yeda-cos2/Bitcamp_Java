@@ -24,6 +24,7 @@ public static void main(String[] args){
     while(true){
         System.out.println("여기는 반복문내부의 무한 루프");
     }
+	//System.out.println("오류 발생: 무한루프 뒤라서");
     
 }
 }

@@ -4,26 +4,30 @@ public class Example3
 	{
 		int i = Integer.parseInt(args[0]);
 		int k = Integer.parseInt(args[1]);
-		int sum1, sum2;
 
-	if(i>k){
-	    System.out.print(k+"~"+i+"의 합은 ");
-			for(sum1=0;i>=k;k++){
-				sum1=sum1+k;
-	}					
-	System.out.println(sum1+"입니다.");
-
-	
-	}else if(i==k){
-		System.out.println("입력값이 같습니다 [usage]:: 서로 다른 두 수를 입력하세요");
-	
-	}else if(i<k){
-	    System.out.print(i+"~"+k+"의 합은 ");
-		for(sum2=0;k>=i;i++){
-		sum2=sum2+i;
+		if(args.length != 2){
+			System.out.println("숫자를 두 개 입력해주세요");
 		}
-		System.out.println(sum2+"입니다.");
-}
 
-}
-}
+		int sum, temp;
+
+		if(i<k){
+			temp = i;
+			i=k;
+			k=temp;
+		} //end of if
+
+		if(i==k){
+			System.out.println("입력값이 같습니다 [usage]:: 서로 다른 두 수를 입력하세요");
+
+			}else{
+				System.out.print(k+"~"+i+"의 합은 ");
+				for(sum=0;i>=k;k++){
+					sum+=k;
+					} //end of for
+			System.out.println(sum+"입니다.");
+			}//end of else
+
+
+} // end of main
+} // end of class

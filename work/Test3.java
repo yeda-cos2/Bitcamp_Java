@@ -35,5 +35,5 @@ public class Test3 {
 			}
 		}
 
-    }
-}
+    } //end of main
+} //end of class

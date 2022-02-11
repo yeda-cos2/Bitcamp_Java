@@ -35,7 +35,7 @@ case 5:
 System.out.println("입력하신 값은 5입니다.");
 break;
 default:
-System.out.println("case문을 다통과(동일상수가 없을 경우");
+System.out.println("case문을 다통과(동일상수가 없을 경우)");
 System.out.println("default가 수행됨...입력하신 수는 "+inputData+"입니다.");
 break;
 }//end of switch

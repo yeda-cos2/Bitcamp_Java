@@ -4,12 +4,12 @@ public class Test2 {
         int i = Integer.parseInt(args[0]);
         int j = Integer.parseInt(args[1]);
         
-        if(i>j){
-            System.out.printf("첫번째인수:%d,두번째인수:%d,%d-%d=%d입니다.",i,j,i,j,i-j);
-        }else if(i<j){
-            System.out.printf("첫번째인수:%d,두번째인수:%d,%d+%d=%d입니다.",i,j,i,j,i+j);
-
-        }
-      
-    }
-}
+        if(Integer.parseInt(args[0])>Integer.parseInt(args[1])){
+            System.out.println("첫번째인수: "+i+", 두번째인수: "+j+", "+i+"-"+j+"="+(i-j)+"입니다.");
+        
+		}else if(i<j){
+            System.out.println("첫번째인수: "+i+", 두번째인수: "+j+", "+i+"+"+j+"="+(i+j)+"입니다.");
+			
+			}
+     } //end of main
+} //end of class
