@@ -22,7 +22,7 @@ System.out.println("==========================");
 System.out.println("5x"+intArray[k]+"="+5*intArray[k]);
 }
 
-int[] j intArray;
+int[] j=intArray;
 System.out.println("=========================");
 System.out.println("j[0]의 값은:"+j[0]);
 System.out.println("j[5]의 값은:"+j[5]);

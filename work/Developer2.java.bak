@@ -32,8 +32,17 @@ public class Developer2
 
 	public String getName(){
 		System.out.println("getNmae() method");
+//		if(avgIncome==100){
 		return name;
+//		}else{
+//			return "¸ô¶ó";
+//		}
 	}
 
+
+	public int getProjectCareer(){
+		System.out.println("getprojectCareer() method");
+		return projectCareer;
+	}
 
 }

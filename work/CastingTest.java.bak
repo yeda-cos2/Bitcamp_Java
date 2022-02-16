@@ -52,6 +52,9 @@ System.out.println("d1(201/2):"+d1);
 double d2=(double)201/2;
 System.out.println("d2(201/2): "+d2);
 
+double d3=(double)(201/2);
+System.out.println(d3);
+
 }//end of main
 
 }
