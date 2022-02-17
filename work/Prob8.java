@@ -1,29 +1,26 @@
 public class Prob8 {
 
-	public static void main(String[] args) {
+		public int abs(int num1, int num2) {
+		int result;
+		result=num1-num2;
 
-		int i = Integer.parseInt(args[0]);
+		if(result<0){
 
-		if (i <= 0 || i % 2 == 0) {
-			System.out.println("0보다 큰 홀수만 입력 가능합니다.");
-			return;
+			return result*(-1);
 		}
 
-		for (int a=i; a>=1; a-=2) {
-		
-			for(int b=0; b<(i-a)/2;b++){
-				System.out.print(" ");
-			}
+		return result;
 
-			for(int c=0; c<=a-1;c++){
-				System.out.print("*");
+		}
 
-			}
+	public static void main(String[] args) {
+		int num1 = -6;
+		int num2 = 15;
 
-			System.out.println();
 
-		
-		}	//end of for
+		Prob8 prob = new Prob8();
+		System.out.println("두 수의 차는 " + new Prob8().abs(num1, num2));
 
-	} // end of main
-} // end of class
+
+	} //end of main
+} //end of class

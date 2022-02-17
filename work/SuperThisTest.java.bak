@@ -1,5 +1,5 @@
 class JuniorHighSchool {
-	String name = "대한민국중학교";
+//	String name = "대한민국중학교";
 
 	public JuniorHighSchool() {
 
@@ -11,7 +11,7 @@ class JuniorHighSchool {
 	}
 } // end of class
 
-class HighSchool extends JuniorHighSxchool {
+class HighSchool extends JuniorHighSchool {
 	String name = "대한민국고등학교";
 
 	public HighSchool() {
@@ -23,11 +23,13 @@ class HighSchool extends JuniorHighSxchool {
 	}
 
 	public void schoolName() {
+//		String name="가나다";
 		System.out.println("중학교 이름: " + super.name);
 		System.out.println("고등학교 이름: " + this.name);
 		System.out.println("고등학교 이름: " + name);
 
 	}
+
 } // end of class
 
 public class SuperThisTest {

@@ -12,6 +12,7 @@ abstract class BusCharge {
 	public void information() {
 		System.out.println("버스요금안내");
 	}
+	public abstract void charge();
 
 }
 

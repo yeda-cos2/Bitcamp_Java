@@ -12,16 +12,14 @@ public class SortUtil {
 					inputNumbers[j] = inputNumbers[j + 1];
 					inputNumbers[j + 1] = temp;
 
-				} // if
-			} // for
-		} // for
+				} // end of if
+			} // end of for
 
-		for (i = 0; i < inputNumbers.length; i++) {
-			System.out.print(inputNumbers[i]+ ",");
-		} // for
+		} // end of for
+			return inputNumbers;
 
-		 return null;
 	}
+
 
 	public static void main(String[] args) {
 
@@ -36,9 +34,13 @@ public class SortUtil {
 			if (i != numbers.length - 1) {
 				System.out.print(",");
 			} else {
-				System.out.print("'");
+				System.out.print("");
 			}
-		}
+
+		}//for
+
 		System.out.println("Successful!!");
-	}
-}
+
+	}//end of main
+
+}//end of class

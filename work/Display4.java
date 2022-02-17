@@ -14,7 +14,6 @@ abstract class BusCharge {
 	public void information() {
 		System.out.println("버스요금안내");
 	}
-	public abstract void charge();
 
 }
 
@@ -48,34 +47,33 @@ class Old extends BusCharge {
 	}
 }
 
-	public class Display3{
+	public class Display4 {
 	public static void main(String[] args) {
-		BusCharge bc1 =new Student();
-		BusCharge bc2 =new Adult();
-		BusCharge bc3 =new Old();
+		Student bc1 = new Student();
+		Adult bc2 = new Adult();
+		Old bc3 = new Old();
 
 		bc1.information();
 		System.out.print(bc1.section);
 		bc1.charge();
-		
+
 		bc2.information();
 		System.out.print(bc2.section);
 		bc2.charge();
-		
+
 		bc3.information();
 		System.out.print(bc3.section);
 		bc3.charge();
 
-		BusCharge[] bc=new BusCharge[3];
-		bc[0]=new Student();
-		bc[1]=new Adult();
-		bc[2]=new Old();
-
-		for(int i=0;i<bc.length;i++){
-		bc[i].information();
-		System.out.print(bc[i].section);
-		bc[i].charge();
-		}
+//		Fee[] fee=new Fee[3];
+//		fee[0]=new Student();
+//		fee[1]=new Adult();
+//		fee[2]=new Old();
+//		
+//		for(int i=0;i<Fee.length;i++) {
+//			fee[i].information();
+//			System.out.println(fee[i].section);
+//			fee[i].charge();
+//		}
 	}
 }
-		

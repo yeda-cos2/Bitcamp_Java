@@ -23,11 +23,13 @@ class HighSchool extends JuniorHighSchool {
 	}
 
 	public void schoolName() {
+//		String name="가나다";
 		System.out.println("중학교 이름: " + super.name);
 		System.out.println("고등학교 이름: " + this.name);
 		System.out.println("고등학교 이름: " + name);
 
 	}
+
 } // end of class
 
 public class SuperThisTest {

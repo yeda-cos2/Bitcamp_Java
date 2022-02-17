@@ -1,22 +1,25 @@
 public class SortUtil {
 	public int[] ascending(int[] inputNumbers) {
 		int temp,i,j;
+
 		for (i = 0; i < inputNumbers.length - 1; i++) {
+
 			for (j = 0; j < inputNumbers.length - 1; j++) {
+
 				if (inputNumbers[j] > inputNumbers[j + 1]) {
+
 					temp = inputNumbers[j];
 					inputNumbers[j] = inputNumbers[j + 1];
 					inputNumbers[j + 1] = temp;
-				} // if
-			} // for
-		} // for
 
-		for (i = 0; i < inputNumbers.length; i++) {
-			System.out.print(inputNumbers[i]+ ",");
-		} // for
+				} // end of if
+			} // end of for
 
-		 return null;
+		} // end of for
+			return inputNumbers;
+
 	}
+
 
 	public static void main(String[] args) {
 
@@ -33,7 +36,11 @@ public class SortUtil {
 			} else {
 				System.out.print("'");
 			}
-		}
+
+		}//for
+
 		System.out.println("Successful!!");
-	}
-}
+
+	}//end of main
+
+}//end of class

@@ -35,10 +35,10 @@ public class Manager extends Employee {
 	}
 
 	public static void main(String[] args) {
-		Manager m1 = new Manager("È«±æµ¿");
-		// Manager m4=new Manager("È«±æµ¿"."EJB",25,300);
-		// System.out.println("overridingµÈ salary È£Ãâ:"+m4.salary());
-		// m4.callSalary();
-
+		//Manager m1 = new Manager("È«±æµ¿");
+		 Manager m4=new Manager("È«±æµ¿","EJB",25,300);
+		 System.out.println("overridingµÈ salary È£Ãâ:"+m4.salary());
+		 m4.callSalary();
 	}
-}
+	}
+
