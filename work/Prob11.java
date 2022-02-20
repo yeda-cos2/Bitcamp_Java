@@ -1,22 +1,20 @@
-public class Prob11 {
-	public static void main(String[] args) {
-		int num1 = 6;
-		int num2 = 15;
+import.java.util.Scanner;
 
-		Prob11 prob = new Prob11();
-		System.out.println("두 수의 차는 " + prob.abs(num1, num2));
-	}
+public class FactorialUtil{
 
-	public int abs(int num1, int num2) {
+	public int factorial(int n){
+		fac
+		System.out.println("팩토리얼 결과 값= ")
 
-		if (num1 > num2) {
-			return (num1 - num2);
+	public static void main(String[] args){
 
-		} else if (num1 < num2) {
-			return (num2 - num1);
+		Scanner keyboard=new Scanner(System.in);
+		System.out.print("input       =");
 
-		} else {
-			return 0;
-		}
+		FactorialUtil util=new FactorialUtil();
+		System.out.print("Result = "+util.factorial(keyboard.nextInt()));
+
 	} //end of main
+
+
 } //end of class

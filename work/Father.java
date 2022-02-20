@@ -1,3 +1,5 @@
+package jb04.part07;
+
 public class Father{
 
 public String name="ȫ�浿";
