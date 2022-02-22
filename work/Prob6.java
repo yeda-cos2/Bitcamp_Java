@@ -12,9 +12,7 @@ public class Prob6 {
 				maxDay = 28;
 			}
 
-		} else {
-			maxDay = 28;
-		}
+		} 
 
 		System.out.println(year + "년 " + month + "월의 말일은 " + maxDay + "일 입니다.");
 	} // end of main

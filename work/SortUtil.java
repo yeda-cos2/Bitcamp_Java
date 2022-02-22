@@ -1,6 +1,6 @@
 public class SortUtil {
 	public int[] ascending(int[] inputNumbers) {
-		int temp,i,j;
+		int temp, i, j;
 
 		for (i = 0; i < inputNumbers.length - 1; i++) {
 
@@ -16,10 +16,9 @@ public class SortUtil {
 			} // end of for
 
 		} // end of for
-			return inputNumbers;
+		return inputNumbers;
 
 	}
-
 
 	public static void main(String[] args) {
 
@@ -31,16 +30,12 @@ public class SortUtil {
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print(numbers[i]);
 
-			if (i != numbers.length - 1) {
-				System.out.print(",");
-			} else {
-				System.out.print("");
-			}
+			System.out.print(i != (numbers.length - 1) ? "," : "");
 
-		}//for
+		} // for
 
 		System.out.println("Successful!!");
 
-	}//end of main
+	}// end of main
 
-}//end of class
+}// end of class

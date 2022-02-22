@@ -10,9 +10,9 @@ public class Prob5 {
 			for (int k = 0; k < array.length - 1; k++) {
 
 				if (array[k] > array[k + 1]) {
-					temp=array[k];
-					array[k]=array[k+1];
-					array[k+1]=temp;
+					temp = array[k];
+					array[k] = array[k + 1];
+					array[k + 1] = temp;
 
 				} // end of if
 
@@ -20,9 +20,9 @@ public class Prob5 {
 
 		} // end of for
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] );
+			System.out.print(array[i]);
 
-			if(i<array.length-1){
+			if (i < array.length - 1) {
 				System.out.print(",");
 			}
 
@@ -30,9 +30,8 @@ public class Prob5 {
 //				System.out.print(",");
 //			}else{
 //				System.out.print("");
-			
-			
-		}//end of for
+
+		} // end of for
 
 	}// end of main
 }// end of class
