@@ -3,7 +3,7 @@ public class ArrayListTest03{
 
 	public static void main(String[] args){
 
-		ArrayList<String> arrayList=new ArrayList<String>(10);
+		List<String> arrayList=new ArrayList<String>(10);
 
 		String s1=new String("1.ȫ");
 		arrayList.add(s1);			

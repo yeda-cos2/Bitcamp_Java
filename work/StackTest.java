@@ -1,10 +1,10 @@
-import java.util.Stack;
+import java.util.*;
 
 public class StackTest{
 
 	public static void main(String[] args){
 
-		Stack<String> stack=new Stack<String>();
+		List<String> stack=new Stack<String>();
 
 		String value=new String("1: ȫ�浿");
 		stack.push(value);

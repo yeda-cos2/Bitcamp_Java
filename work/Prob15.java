@@ -1,25 +1,25 @@
-public clas SortUtil{
-	public int[] ascending(int[] inputNumbrs){
+public class Prob15 {
+	public static void main(String[] args) {
 
-		return null;
-	}
+		String sourceString = "everyday we have is one more than we deserve";
+		String encodedString = "";
 
-	public static void main(String[] args){
+		for (int i = 0; i < sourceString.length(); i++) {
+			if (sourceString.charAt(i) != ' ') {
+				if (sourceString.charAt(i) == 'x' || sourceString.charAt(i) == 'y'||sourceString.charAt(i) == 'z') {
+					encodedString += (char) (sourceString.charAt(i) - 23);
 
-		SortUtil util = new SortUtil();
-		int[] numbers = new int[] {7,5,2,19,34,51,32,11,67,21};
+				} else {
+					encodedString += (char) (sourceString.charAt(i) + 3); // 범위 안에 있으므로 casting 가능 ~125
 
-		numbers=util.ascending(numbers);
-
-		for(int i=0; i<numbers.length;i++){
-			System.out.print(numbers[i]);
-
-			if(i!=numbers.length-1){
-				System.out.print(",");
-			}else{
-				System.out.print("'");
+				}
+			} else {
+				encodedString += " ";
 			}
 		}
-		System.out.println("Successful!!");
-	}
-}
+
+		System.out.println("암호화할 문자열: " + sourceString);
+		System.out.println("암호화된 문자열: " + encodedString);
+
+	}// end of main
+}// end of class

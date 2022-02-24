@@ -29,17 +29,17 @@ public class TestRectangle {
 		System.out.println(rec2.getColor()+"직사각형의 넓이는 "+rec2.area()+"이고 둘레는 "+ rec2.perimeter()+"입니다.");
 
 		if(rec1.area()>rec2.area()){
-			System.out.println("넓이는 "+rec1.area()+"직사각형이 더 큽니다.");
+			System.out.println("넓이는 "+rec1.getColor()+"직사각형이 더 큽니다.");
 		}else if(rec2.area()>rec1.area()){
-			System.out.println("넓이는 "+rec2.area()+"직사각형이 더 큽니다.");
+			System.out.println("넓이는 "+rec2.getColor()+"직사각형이 더 큽니다.");
 		}else{
 			System.out.println("넓이는 같습니다.");
 		}
 
 		if(rec1.perimeter()>rec2.perimeter()){
-			System.out.println("둘레는 "+rec1.perimeter()+"직사각형이 더 큽니다.");
+			System.out.println("둘레는 "+rec1.getColor()+"직사각형이 더 큽니다.");
 		}else if(rec2.perimeter()>rec1.perimeter()){
-			System.out.println("둘레는 "+rec2.perimeter()+"직사각형이 더 큽니다.");
+			System.out.println("둘레는 "+rec2.getColor()+"직사각형이 더 큽니다.");
 		}else{
 			System.out.println("둘레는 같습니다.");
 		}

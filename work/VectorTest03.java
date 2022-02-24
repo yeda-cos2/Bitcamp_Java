@@ -10,14 +10,14 @@ public class VectorTest03{
 		vector.add(s1);
 		vector.add(new String("2.µ¿ "));
 		vector.add("3.´Ô ¾È³ç");
-
+/*
 		for(int i=0;i<vector.size();i++){
 			String s=vector.elementAt(i);
 			System.out.print(s);
 		}
 
 		System.out.println("\nJDK 1.5 Ãß°¡±â´É:: Generic, Enhanced For Loop »ç¿ë");
-
+*/
 		for(String value:vector){
 			System.out.print(value);
 		}

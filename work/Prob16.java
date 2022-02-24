@@ -9,7 +9,7 @@ public class Prob16 {
 			for (int i = 1; i <= no; i++) {
 				System.out.print(i + "*" + j + "=" + i * j + " ");
 			}
-			System.out.println("");
+			System.out.println();
 		}
 
 	}

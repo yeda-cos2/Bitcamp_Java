@@ -22,5 +22,5 @@ public class Prob4 {
 		System.out.println(number + "의 배수 개수=" + count);
 		System.out.println(number + "의 배수 합=" + sum);
 
-	} // end of main
-} // end of class
+	} //end of main
+} //end of class
