@@ -1,0 +1,9 @@
+package study;
+
+public class CellPhoneMain {
+
+	public CellPhoneMain() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
