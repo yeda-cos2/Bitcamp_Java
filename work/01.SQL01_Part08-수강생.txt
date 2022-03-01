@@ -1,0 +1,101 @@
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12 ASC NULLS FIRST;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12 DESC NULLS FIRST;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY ø¨∫¿;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY 2;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿,dept_name ∫Œº≠
+FROM emp_test
+ORDER BY dept_name;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY dept_name;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿,dept_name ∫Œº≠
+FROM emp_test
+ORDER BY salary;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿,dept_name ∫Œº≠
+FROM emp_test
+ORDER BY salary,∫Œº≠;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿,dept_name ∫Œº≠
+FROM emp_test
+ORDER BY ∫Œº≠,salary;
+
+SELECT
+name||title
+FROM emp_test;
+
+SELECT
+name|' '|title
+FROM emp_test;
+
+SELECT dept_name ∫Œº≠ FROM emp_test;
+
+SELECT
+DISTINCT dept_name ∫Œº≠∏Ì
+FROM emp_test;
+
+SELECT
+DISTINCT dept_name,name
+FROM emp_test;
+
+INSERT
+INTO emp_test(name,dept_name)
+VALUES('»´±Êµø','∞¸∏Æ∫Œ');
+
+SELECT
+dept_name,name
+FROM emp_test;
+
+SELECT
+DISTINCT dept_name,name
+FROM emp_test;
+
+ROLLBACK;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12 ASC;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12 DESC;
+
+SELECT
+name ¿Ã∏ß, salary*12 ø¨∫¿
+FROM emp_test
+ORDER BY salary*12;

@@ -1,0 +1,70 @@
+SELECT COUNT(*) FROM emp_test;
+
+SELECT ROWNUM,id,name FROM emp_test;
+
+SELECT
+COUNT(*) "레코드",
+COUNT(salary) 월급수령자,
+COUNT(NVL(salary,0)) "월급수령자(NULL포함)",
+COUNT(DISTINCT salary)"월급종류",
+COUNT(DISTINCT NVL(salary,0)) "월급수령자(NULL포함)"
+FROM emp_test;
+
+SELECT
+COUNT(*) 영업부직원1,
+COUNT(dept_name) 영업부직원2,
+COUNT(salary) 영업부직원월급수령자
+FROM emp_test;
+WHERE dept_name='영업부';
+
+SELECT
+SUM(salary) 관리부월급합,
+MAX(salary) 관리부최대월급,
+MIN(salary) 관리부최소월급,
+AVG(salary) 관리부평균월급,
+AVG(NVL(salary,0)) 관리부평균월급
+FROM emp_test;
+WHERE dept_name='관리부';
+
+SELECT
+SUM(salary) 영업부월급합,
+MAX(salary) 영업부최대월급,
+MIN(salary) 영업부최소월급,
+AVG(salary) 영업부평균월급,
+AVG(NVL(salary,0)) 영업부평균월급
+FROM emp_test;
+WHERE dept_name='영업부';
+
+SELECT
+name,MAX(salary)
+FROM emp_test
+WHERE dept_name='관리부';
+
+SELECT
+dept_name,MAX(salary)
+FROM emp_test
+WHERE dept_name='관리부';
+
+SELECT
+dept_name,MAX(salary)
+FROM emp_test
+WHERE dept_name='관리부';
+GROUP BY dept_name;
+
+SELECT
+dept_name,MAX(salary)
+FROM emp_test
+GROUP BY dept_name;
+
+SELECT
+dept_name,MAX(salary)
+FROM emp_test
+WHERE dept_name IS NOT NULL
+GROUP BY dept_name;
+
+SELECT
+dept_name,AVG(salary)
+FROM emp_test
+WHERE dept_name IS NOT NULL
+GROUP BY dept_name;
+ORDER BY dept_name;

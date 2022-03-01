@@ -2,4 +2,81 @@ SELECT * FROM emp_test;
 
 UPDATE emp_test
 SET id=7
-WHERE name='SCOT
+WHERE name='SCOTT';
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;
+
+UPDATE emp_test
+SET id=7
+WHERE name='SCOTT';
+
+SELECT*FROM emp_test;
+
+COMMIT;
+
+UPDATE emp_Test
+SET dept_name='包府何'
+WHERE dept_name='康诀何';
+
+SELECT*FROM emp_test;
+
+COMMIT;
+
+DELETE FROM emp_test
+/* DELETE emp_test */
+WHERE title='厘焙'
+
+SELECT*FROM emp_test;
+
+COMMIT;
+
+DELETE*FROM emp_test;
+WHERE id>=6;
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;
+
+DELETE*FROM emp_test;
+WHERE id>=5 AND id<=6;
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;
+
+DELETE*FROM emp_test;
+WHERE id=5 OR id=6;
+
+SELECT*FROM emp_test;
+
+COMMIT;
+
+SELECT*FROM emp_test;
+
+DELETE*FROM emp_test;
+WHERE id=2 OR id=3;
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;
+
+DELETE*FROM emp_test;
+WHERE id=2 AND id=3;
+
+DELETE*FROM emp_test;
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;

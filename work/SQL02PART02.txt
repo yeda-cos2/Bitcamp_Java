@@ -1,0 +1,31 @@
+SELECT
+name || '님의 월급은' || salary || '원'"사원월급"
+FROM emp_test;
+
+SELECT
+CONCAT(CONCAT(name,'님의 월급은'),CONCAT(salary,'원'))"사원월급"
+FROM emp_test;
+
+SELECT
+CONCAT(CONCAT(name,'님의 월급은'),CONCAT(NVL(salary,0),'원')"사원월급"
+FROM emp_test;
+
+SELECT
+name 이름, in_date 입사연도
+FROM emp_test
+WHERE in_date LIKE '01%';
+
+SELECT
+name 이름, in_date 입사연도
+FROM emp_test
+WHERE SUBSTR(in_date,1,2)= '01';
+
+SELECT
+name 이름, in_date 입사연도
+FROM emp_test
+WHERE SUBSTR(in_date,-8,2)= '01';
+
+SELECT
+TITLE 두자직책
+FROM emp_test
+WHERE LENGTH(TITLE)=2;
