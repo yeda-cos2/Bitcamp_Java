@@ -1,0 +1,15 @@
+package prob_0228;
+
+public class FileController {
+
+	public void reverseLine(String oldf, String newf) throws Exception{
+		
+	}
+	
+	public static void main(String[] args) throws Exception{
+		FileController c= new FileController();
+		String oldf="files/oldf.txt";
+		String newf="files/newf.txt";
+		c.reverseLine(oldf, newf);
+	}
+}

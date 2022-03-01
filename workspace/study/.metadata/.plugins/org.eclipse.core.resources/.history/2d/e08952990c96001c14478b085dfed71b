@@ -1,0 +1,23 @@
+package shop.service.user;
+
+public class Client {
+	//Field
+	private String name;
+	String address;
+	protected boolean gender;
+	public String hp;
+	public static final String nationality="¥Î«—πŒ±π";
+
+	public Client(String name, String address, boolean gender, String hp) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.gender = gender;
+		this.hp = hp;
+	}
+
+	public Client() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

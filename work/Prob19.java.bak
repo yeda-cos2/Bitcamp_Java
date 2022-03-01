@@ -8,8 +8,6 @@ public class Prob19{
 		
 		if(c == oldChar){
 			c=newChar;
-		}else{
-			return str;
 		}
 			newstr+=c;
 

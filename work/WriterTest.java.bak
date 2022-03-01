@@ -8,6 +8,8 @@ public class WriterTest{
 
 		InputStream inputStream=System.in;
 		Reader reader=new InputStreamReader(inputStream);
+		OutputStream outputStream=System.out;
+		Writer writer=new OutputStreamWriter(outputStream);
 
 		System.out.println("입력을 기다립니다");
 		try{

@@ -1,0 +1,48 @@
+SELECT SYSDATE FROM DUAL;
+
+SELECT 9*9 FROM DUAL;
+SELECT USER FROM DUAL;
+
+INSERT
+INTO emp_test(id,name,salary,title,in_date,dept_name)
+VALUES(1,'김사장',100,'사장','04-07-19','개발부');
+
+SELECT*FROM EMP_TEST;
+
+INSERT
+INTO emp_test
+VALUES(2,'홍길동',1000,'부사장','2004/07/19','영업부');
+
+INSERT
+INTO emp_test(id,name,salary)
+VALUES(3,'홍길순',10000);
+
+INSERT
+INTO emp_test(id,name,title)
+VALUES(4,'이순신','장군');
+
+COMMIT;
+
+INSERT
+INTO emp_test(id,name,title)
+VALUES(4,'이순신','장군');
+
+SELECT*FROM emp_test;
+
+ROLLBACK;
+
+SELECT*FROM emp_test;
+
+INSERT
+INTO emp_test
+VALUES(2,USER,1000,'부사장',SYSDATE,'영업부');
+
+INSERT
+INTO emp_test(id,name)
+VALUES(5,'장나라');
+
+INSERT
+INTO emp_test
+VALUES(6,'신나라',NULL,null,",");
+
+COMMIT;

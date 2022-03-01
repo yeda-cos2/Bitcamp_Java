@@ -1,0 +1,30 @@
+package jp03.part05;
+
+import java.io.*;
+
+public class FileWriterTestFilter02{
+
+	public static void main(String[] args) throws Exception{
+
+		BufferedReader br=null;
+		BufferedWriter bw=null;
+
+		br=new BufferedReader(new InputStreamReader(System.in));
+		bw=new BufferedWriter(new FileWriter("src/jp03/part05/test.txt",false)); //파일경로 지정: src/ 나 src\\
+
+
+		System.out.println("화일에 저장하실 글을 입력하세요 ");
+		while(true){
+			String str=br.readLine();
+			if(str.equals("끝")){
+				break;
+			}
+			bw.write(str,0,str.length());
+			bw.newLine();
+		}
+			bw.flush();
+
+			br.close();
+			bw.close();
+		}
+	}

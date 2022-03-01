@@ -1,0 +1,16 @@
+CREATE TABLE emp_test(
+id		NUMBER(3),
+name		VARCHAR2(15),
+salary		NUMBER(7,2),
+title		VARCHAR2(15)	DEFAULT	'»ç¿ø'
+in_date		DATE		DEFAULT	SYSDATE,
+dept_name	VARCHAR2(15)
+);
+
+
+DESC emp_test;
+DESCRIBE emp_test;
+SELECT*FROM emp_test;
+
+CREATE TABLE test_table(
+);

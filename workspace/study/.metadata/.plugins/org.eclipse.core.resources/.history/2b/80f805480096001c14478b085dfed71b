@@ -1,0 +1,18 @@
+package study;
+
+public class CellPhone {
+//Field
+	private String phoneNumber="";
+	private int totalCallTime;
+	private int totalFee;
+	private int feePerCallTime;
+	
+	//Constructor
+	public CellPhone() {
+	}
+	public CellPhone(String phoneNumber, int feePerCallTime) {
+		this.phoneNumber=phoneNumber;
+		this.feePerCallTime=feePerCallTime;
+	}
+	//Method
+}

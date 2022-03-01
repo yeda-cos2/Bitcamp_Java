@@ -1,0 +1,14 @@
+package study;
+
+public class Prob22 {
+
+//public Vector<String> dataChange(String[] strData){
+//	return null;
+//}
+
+public static void main(String[] args) {
+	
+//	Prob st=new Prob();
+//	String[] strData= {"Java Programming","JDBC","Oracle10g"}
+}
+}

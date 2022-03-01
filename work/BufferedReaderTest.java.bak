@@ -9,7 +9,7 @@ public class BufferedReaderTest{
 		int readCount=0;
 
 		FileReader fr=new FileReader(args[0]);
-		BufferedReader br=new BufferedReader(Fr);
+		BufferedReader br=new BufferedReader(fr);
 
 		String oneLine=null;
 

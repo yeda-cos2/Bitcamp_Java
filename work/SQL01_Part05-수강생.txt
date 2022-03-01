@@ -1,0 +1,5 @@
+SELECT * FROM emp_test;
+
+UPDATE emp_test
+SET id=7
+WHERE name='SCOT

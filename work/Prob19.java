@@ -7,7 +7,7 @@ public class Prob19{
 		char c=str.charAt(i);
 		
 		if(c == oldChar){
-			c=newChar;
+			newstr+=newChar;
 		}
 			newstr+=c;
 

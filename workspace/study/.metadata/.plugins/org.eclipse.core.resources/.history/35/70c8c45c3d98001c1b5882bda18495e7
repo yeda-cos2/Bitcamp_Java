@@ -1,0 +1,23 @@
+package prob_0228;
+
+public class Prob24 {
+	
+	 private static String getParameter(String url, String paramName) {
+		 return null;
+	 }
+
+	public static void main(String[] args) {
+		String url1="";
+		
+		String prodName=getParameter(url1,"prodName");
+		System.out.println("力前 捞抚: "+ prodName);
+		
+		String url2="";
+		
+		String userAddress=getParameter(url2,"address");
+		System.out.println("雀盔 林家: "+userAddress);
+	}
+	
+
+
+}

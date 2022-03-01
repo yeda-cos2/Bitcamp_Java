@@ -17,11 +17,11 @@ public class Prob21 {
 
 		for (int i = 0; i < str1.length(); i++) {
 				if (str1.charAt(i) == str2.charAt(0)) {
-					array[i] += "";
+					newstring += "";
 				} else {
-					array[i] += str1.charAt(i);
+					newstring += str1.charAt(i);
 				}
-				
+				array[i]=newstring;
 			}
 
 		return array;

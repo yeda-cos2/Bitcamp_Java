@@ -6,7 +6,7 @@ public class DeveloperTest
 
 		Developer developer = new Developer();
 
-		System.out.println("이름: "+developer.name);
+		System.out.println("이름: "+Developer.name);
 		System.out.println("직업: "+developer.job);
 		System.out.println("평균수입은: "+developer.avgIncome);
 		System.out.println("PJT 경력은: "+developer.projectCareer);

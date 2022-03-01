@@ -27,7 +27,7 @@ public class FileInputStreamTest{
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
 		}catch(IOException e1){
-			e.printStackTrace();
+			e1.printStackTrace();
 		}finally{
 			System.out.println("\n\n=======================");
 			System.out.println("=====>>> readÈ½¼ö readCount:"+readCount);
@@ -35,7 +35,7 @@ public class FileInputStreamTest{
 			try{
 				fls.close();
 			}catch(Exception e){
-							e.printStackTrace();
+				e.printStackTrace();
 
 			}
 		}
