@@ -1,9 +1,0 @@
-package study;
-
-public class MethodSyntaxTest {
-public static void main(String[] args) {
-	MethodSyntax met = new MethodSyntax();
-	
-	System.out.println("¿Ã∏ß: "+met.getName());
-}
-}

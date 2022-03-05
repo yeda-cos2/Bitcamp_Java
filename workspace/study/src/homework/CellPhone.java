@@ -50,10 +50,11 @@ public class CellPhone {
 	}
 
 	public boolean equals(Object otherObject) {
-		boolean object = false;
-		if (otherObject instanceof CellPhone) {
-			object = true;
+		if (!(otherObject instanceof CellPhone)) {
+			return false;
+		}else {
+			CellPhone otherPhone=(CellPhone) otherObject;
+			return model.equals(otherPhone.model);
 		}
-		return object;
 	}
 }

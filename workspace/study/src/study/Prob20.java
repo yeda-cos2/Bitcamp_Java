@@ -3,7 +3,7 @@ package study;
 public class Prob20 {
 	public static void main(String[] args) {
 
-		CellPhone cellPhone = new CellPhone("010-010-010", 1000);
+		CellPhone1 cellPhone = new CellPhone1("010-010-010", 1000);
 		cellPhone.call("017-017-017", 10);
 		cellPhone.call("016-016-016", 10);
 		cellPhone.calculateTotalFee();

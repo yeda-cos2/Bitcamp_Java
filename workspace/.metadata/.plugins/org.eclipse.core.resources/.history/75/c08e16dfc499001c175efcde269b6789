@@ -1,0 +1,9 @@
+package prob_0302;
+
+public class FileCompareUtil {
+
+	public FileCompareUtil() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

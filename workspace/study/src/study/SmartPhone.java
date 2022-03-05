@@ -1,6 +1,6 @@
 package study;
 
-public class SmartPhone extends CellPhone {
+public class SmartPhone extends CellPhone1 {
 	// Field
 	private boolean isMonthlyFixedRate = false;
 	private int monthlyFixedFee;

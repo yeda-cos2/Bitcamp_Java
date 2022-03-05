@@ -1,0 +1,47 @@
+package prob_0228;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class FileController {
+
+	public void reverseLine(String oldf, String newf) throws Exception {
+
+		BufferedReader br = new BufferedReader(new FileReader(oldf));
+		List<String> m=new ArrayList<String>();
+		String line="";
+		while((line=br.readLine())!=null) {
+			m.add(line);
+		}
+		br.close();
+		
+		BufferedWriter bw = new BufferedWriter(new FileWriter(newf));
+		for(int i=m.size()-1;i>=0;i--) {
+			bw.write(line);
+		}
+		bw.flush();
+		bw.close();
+		
+
+	}
+
+ 
+
+	public static void main(String[] args) throws Exception {
+
+		FileController c = new FileController();
+
+		String oldf = "files/oldf.txt";
+
+		String newf = "files/newf.txt";
+
+		c.reverseLine(oldf, newf);
+
+	}
+
+}

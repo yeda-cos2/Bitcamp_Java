@@ -1,0 +1,9 @@
+package prob_0304;
+
+public class DataFormatException {
+
+	public DataFormatException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

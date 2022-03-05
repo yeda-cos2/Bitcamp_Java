@@ -1,0 +1,17 @@
+package prob_0304;
+
+public class Prob28 {
+
+	private static int[] generateRandomNumber() {
+		return null;
+	}
+
+	public static void printStatistics(int[] array) {
+
+	}
+
+	public static void main(String[] args) {
+		int[] array = generateRandomNumber();
+		printStatistics(array);
+	}
+}

@@ -1,0 +1,38 @@
+package prob_0302;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Grade {
+
+public void printGrade(String fileName) throws IOException {
+	BufferedReader br=new BufferedReader(new FileReader(fileName));
+	BufferedWriter bw=new BufferedWriter(new FileWriter(fileName));
+	String str=null;
+	while(true) {
+		str=br.readLine();
+		if(str==null) {
+			break;
+		}
+		bw.write(str);
+	}
+	br.close();
+	
+	//bw.write(str+"의 점수는 "+str+"점 입니다.");
+	bw.newLine();
+	
+	bw.flush();
+	bw.close();
+}
+
+
+public static void main(String[] args) throws IOException {
+	Grade grade=new Grade();
+	String fileName="C:\\workspace\\01PJT\\files\\score.txt";
+	grade.printGrade(fileName);
+}
+
+}

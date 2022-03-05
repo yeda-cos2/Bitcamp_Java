@@ -1,0 +1,9 @@
+package prob_0302;
+
+public class Grade {
+
+	public Grade() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
