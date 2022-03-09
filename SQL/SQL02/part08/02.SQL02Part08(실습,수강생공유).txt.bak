@@ -25,7 +25,7 @@ c.name 이름, s.dept_name 부서명, c.salary 월급, sg.grade 월급등급
 from c_emp c, sal_grade sg, s_dept s
 where c.dept_id=s.id 
 	and c.salary between sg.losal and sg.hisal 
-	and sg.grade=(select sg.grade from cmp_test c, sal_grade sg where c.dept_id=s.id and c.name='홍길동' ));
+	and sg.grade=(select sg.grade in(select sg.grade from sal_grade sg where c.dept_id=s.id and c.name='홍길동' ));
 
 총무부 영업부 직원 이름 부서아이디
 select

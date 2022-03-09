@@ -101,4 +101,3 @@ e1.empno 사번, e1.ename 이름, e2.empno 관리자사번, e2.ename 관리자이름
 from emp e1, emp e2
 where e1.mgr=e2.empno(+)
 order by e1.empno;
-

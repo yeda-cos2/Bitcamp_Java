@@ -1,0 +1,107 @@
+create table salary_info(
+employee_id	number(6),
+department_id number(4),
+salary number(8,2)
+);
+
+select
+e.employee_id 사번, d.department_id 부서번호, e.salary 연봉, (select round(avg(e.salary)) from employees e,departments d where d.department_id=e.department_id group by e.department_id) 평균연봉
+from departments d, employees e
+where d.department_id=e.department_id
+	and e.salary >(select avg(e.salary) from employees e where d.department_id=e.department_id group by department_name)
+order by 평균연봉 desc;
+
+select
+e.employee_id 사번, d.department_id 부서번호, e.salary 연봉, round(avg(e.salary)) 평균연봉
+from departments d, employees e
+where d.department_id=e.department_id
+	and e.salary >(select avg(e.salary) from employees e where d.department_id=e.department_id group by department_name)
+group by e.employee_id, d.department_id,e.salary 
+order by 평균연봉 desc;
+
+//group by e.employee_id, d.department_id, e.salary
+
+select 
+round(avg(e.salary),0)
+from employees e,departments d 
+where d.department_id=e.department_id
+group by department_name;
+
+2.
+select
+rank() over(order by salary desc) RANKING,last_name, first_name, salary
+from (select rank() over(order by salary desc) RANKING, last_name, first_name, salary from employees)  A
+where A.RANKING BETWEEN 6 AND 10
+order by 1;
+
+3. 
+
+select 
+extract(year from e.hire_date) 년도,avg(e.salary) 평균급여 
+from employees e,jobs j 
+WHERE  e.job_id=j.job_id and  j.job_title='Sales Manager' 
+group by extract(year from e.hire_date)
+order by 1;
+
+4.
+select
+e1.last_name 사원이름, nvl(e2.last_name,'<없음>') 매니저이름,d.department_name 부서이름
+from employees e1,employees e2, departments d,locations l
+where  e1.department_id=d.department_id 
+	and d.location_id=l.location_id 
+	and l.city='Seattle' 
+	and e1.manager_id=e2.employee_id(+) 
+order by 1;
+
+5.
+select
+e.last_name 사원이름, d.department_name 부서이름, min(e.salary) 급여
+from employees e, departments d
+where d.department_id=e.department_id
+	and e.salary=(select min(e.salary) from employees e where d.department_id=e.department_id group by department_name)
+group by  e.last_name,d.department_name, e.salary
+order by 2, 1;
+
+6.
+select
+A.도시이름, A.평균급여, A.직원수
+from (select l.city 도시이름, avg(e.salary) 평균급여, count(l.city) 직원수 
+		from employees e, departments d, locations l
+		where d.location_id=l.location_id
+		and d.department_id=e.department_id
+		GROUP BY l.city) A
+where A.직원수<10
+group by 1
+
+태영오빠
+SELECT 
+M.CITYNAME 도시이름, M.AVG 평균급여, M.COUNT 직원수
+FROM (SELECT ROUND(AVG(B.SALARY)) AVG, L.CITY CITYNAME, COUNT(L.CITY) COUNT
+FROM EMPLOYEES B, DEPARTMENTS D, LOCATIONS L
+WHERE D.LOCATION_ID = L.LOCATION_ID
+AND B.DEPARTMENT_ID = D.DEPARTMENT_ID
+GROUP BY L.CITY) M
+WHERE M.COUNT<10
+ORDER BY M.AVG;
+
+7.
+create table dept30(
+SELECT
+A.직책, a.평균급여
+from (SELECT j.job_title 직책, avg(e.salary) 평균급여 from jobs j, employees e,departments d 
+where j.job_id=e.job_id
+and e.department_id=d.department_id
+and d.department_id='30' group by j.job_title) a
+where a.평균급여>=2000
+order by 1
+);
+
+
+	
+8.
+select
+h.employee_id 사번, e.first_name||' '||e.last_name 이름
+from employees e, job_history h,jobs j
+where h.job_id=j.job_id
+	and h.employee_id=e.employee_id
+	and j.job_title='Public Accountant'

@@ -1,0 +1,36 @@
+SQL
+-keyword: 대문자, identifier: 소문자로 한다
+
+1. DDL: CREATE, ALTER, DROP  
+2. DML: DELETE, INSERT,,,(SELECT)
+3. DCL: COMMIT, ROLLBACK
+
+테이블 만들기
+CREATE TABLE emp_test(
+);
+DEFAULT 값 설정 가능
+
+테이블 삭제
+DROP TABLE emp_test(
+);
+
+테이블 구조 확인
+DESCRIBE emp_test;
+DESC emp_test; 
+이름: 칼럼 이름
+널?: 칼럼의 null 설정
+유형: 칼럼의 데이터 유형
+
+테이블 모든 데이터 보기
+SELECT*FROM emp_test;
+
+
+select
+column name [//]
+from table name
+where 조건
+group by cn
+having 조건
+order by cn
+
+1:다

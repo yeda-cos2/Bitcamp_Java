@@ -105,15 +105,9 @@ order by s.dept_name, c.name, c.salary desc;
 3. 부서별 평균 월급  부서번호/부서명/평균월급 조회
      ==> 부서번호 :: 오름차순
 select
-c.dept_id 부서번호,s.dept_name 부서명,AVG(c.salary) 평균월급
+c.dept_id,s.dept_name,AVG(c.salary)
 from c_emp c, s_dept s
-where c.dept_id=s.id
-group by c.dept_id, s.dept_name
+group by s.dept_name
 order by c.dept_id;
 
 4. 총무부 평균 월급  부서번호/부서명/평균월급 조회
-select
-c.dept_id 부서번호,s.dept_name 부서명,AVG(c.salary) 평균월급
-from c_emp c, s_dept s
-where c.dept_id=s.id and s.dept_name='총무부'
-group by c.dept_id, s.dept_name;
