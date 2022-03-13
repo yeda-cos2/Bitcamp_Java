@@ -1,31 +1,36 @@
 create table salary_info(
-employee_id	number(6),
+employee_id	 number(6),
 department_id number(4),
 salary number(8,2)
 );
 
 select
-e.employee_id »ç¹ø, d.department_id ºÎ¼­¹øÈ£, e.salary ¿¬ºÀ, (select round(avg(e.salary)) from employees e,departments d where d.department_id=e.department_id group by e.department_id) Æò±Õ¿¬ºÀ
-from departments d, employees e
-where d.department_id=e.department_id
-	and e.salary >(select avg(e.salary) from employees e where d.department_id=e.department_id group by department_name)
-order by Æò±Õ¿¬ºÀ desc;
+e.»ç¹ø, A.ºÎ¼­¹øÈ£, A.¿¬ºÀ, A.Æò±Õ¿¬ºÀ
+from (select e.employee_id »ç¹ø, d.department_id ºÎ¼­¹øÈ£, e.salary ¿¬ºÀ, round(avg(e.salary)) Æò±Õ¿¬ºÀ from employees e,departments d where d.department_id=e.department_id group by d.department_name) A
+where A.»ç¹ø=A.ºÎ¼­¹øÈ£
+	and A.¿¬ºÀ >A.Æò±Õ¿¬ºÀ
+group by A.»ç¹ø,A.ºÎ¼­¹øÈ£,A.¿¬ºÀ
+order by 4 desc;
+
 
 select
-e.employee_id »ç¹ø, d.department_id ºÎ¼­¹øÈ£, e.salary ¿¬ºÀ, round(avg(e.salary)) Æò±Õ¿¬ºÀ
+e.employee_id »ç¹ø, d.department_id ºÎ¼­¹øÈ£, e.salary ¿¬ºÀ, (SELECT ROUND(AVG(e.SALARY)) 
+FROM EMPLOYEES e WHERE d.department_id=e.department_id GROUP BY e.department_id) Æò±Õ¿¬ºÀ  
 from departments d, employees e
 where d.department_id=e.department_id
-	and e.salary >(select avg(e.salary) from employees e where d.department_id=e.department_id group by department_name)
-group by e.employee_id, d.department_id,e.salary 
+   and e.salary >(select avg(e.salary) from employees e where d.department_id=e.department_id group by department_name)
+group by e.employee_id, d.department_id, e.salary
 order by Æò±Õ¿¬ºÀ desc;
 
-//group by e.employee_id, d.department_id, e.salary
+CREATE TABLE SALARY_INFO
+AS(
 
-select 
-round(avg(e.salary),0)
-from employees e,departments d 
-where d.department_id=e.department_id
-group by department_name;
+SELECT A.EMPLOYEE_ID »ç¹ø, A.department_id ºÎ¼­¹øÈ£, A.salary ¿¬ºÀ, 
+(SELECT ROUND(AVG(B.SALARY)) FROM EMPLOYEES B WHERE A.department_id=B.department_id GROUP BY B.department_id) ºÎ¼­Æò±Õ¿¬ºÀ
+FROM EMPLOYEES A
+WHERE A.SALARY>=(SELECT ROUND(AVG(B.SALARY)) FROM EMPLOYEES B WHERE A.department_id=B.department_id GROUP BY B.department_id)
+)
+ORDER BY 4 DESC NULLS LAST;
 
 2.
 select
