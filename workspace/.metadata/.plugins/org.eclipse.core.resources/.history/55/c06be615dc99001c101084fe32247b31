@@ -1,9 +1,0 @@
-package prob_0302;
-
-public class FileCalculator {
-
-	public FileCalculator() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

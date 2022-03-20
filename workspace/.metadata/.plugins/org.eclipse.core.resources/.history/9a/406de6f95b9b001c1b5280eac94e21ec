@@ -1,9 +1,0 @@
-package prob_0304;
-
-public class Book {
-
-	public Book() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

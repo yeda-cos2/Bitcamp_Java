@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<form action="Work" method="post">
+	<head>
+<title>Work.html</title>
+	</head>
+
+	<body>
+		<tr>
+			<table border="0">
+				<th align="left">●개인정보
+					<hr color="red">
+				<th colspan="3" align="right"><input type="button" value="?">도움말
+					<hr color="teal"></th>
+				</tr>
+
+				<tr>
+					<td style="background: silver">*이름(한글실명)</td>
+					<td colspan="3"><input type="text" name="이름"
+						style="width: 120px; height: 20px" /></td>
+					<br />
+				</tr>
+
+				<tr>
+					<td style="background: silver">*성별</td>
+					<td colspan="3"><input type="radio" name="성별" value="남"
+						checked />남 <input type="radio" name="성별" value="여" /> 여<br /></td>
+				</tr>
+
+				<tr>
+
+					<td style="background: silver">*생년월일</td>
+					<td colspan="3"><input type="text" name="year"
+						style="width: 50px;" />년 <select name="month">
+							<option>선택</option>
+							<option>1월</option>
+							<option>2월</option>
+							<option>3월</option>
+							<option>4월</option>
+							<option>5월</option>
+							<option>6월</option>
+							<option>7월</option>
+							<option>8월</option>
+							<option>9월</option>
+							<option>10월</option>
+							<option>11월</option>
+							<option>12월</option>
+					</select>월 <select name="day">
+							<option>선택</option>
+							<option>1일</option>
+					</select>일 <input type="radio" name="양력/음력" value="양력" checked />양력 <input type="radio"
+						name="양력/음력" value="음력" />음력 (<input type="radio" />윤달)</td>
+					<br />
+				<tr>
+					<td style="background: silver">*최종학력</td>
+					<td colspan="3"><select name="최종학력">
+							<option>선택하세요.</option>
+							<option>초등학교</option>
+							<option>중학교</option>
+							<option>고등학교</option>
+							<option>대학교</option>
+							<option>대학원</option>
+					</select></td>
+					<br />
+				<tr>
+					<td style="background: silver">*직업</td>
+					<td><select name="직업">
+							<option>선택하세요.</option>
+							<option>학생</option>
+							<option>백수</option>
+					</select>
+					<td style="background: silver">*소속</td>
+					<td><input type="text" name="소속" /></td>
+				</tr>
+				<br />
+
+				<tr>
+
+					<td style="background: silver">*결혼여부</td>
+					<td><input type="radio" name="결혼여부" value="미혼" checked />미혼 <input
+						type="radio" name="결혼여부" value="기혼" />기혼</td>
+					<td style="background: silver">*자녀수</td>
+					<td><select name="자녀수">
+							<option>선택</option>
+							<option>0명</option>
+							<option>1명</option>
+							<option>2명</option>
+							<option>3명</option>
+					</select>명</td>
+				</tr>
+				<br />
+
+				<tr>
+					<td style="background: silver" rowspan="3">*연락처</td>
+					<td colspan="3">전화번호 <input type="text" name="tel1"
+						style="width: 50px;">-<input type="text" name="tel1"
+						style="width: 50px;">-<input type="text" name="tel1"
+						style="width: 50px;" /> <input type="radio" value="집" checked />집<input
+						type="radio" value="집">직장
+					</td>
+				<tr>
+					<td>휴대폰<input type="text" name="tel2" style="width: 50px;">-<input
+						type="text" name="tel2" style="width: 50px;">-<input type="text" name="tel2"
+						style="width: 50px;" />
+					<td style="background: silver">*이동통신사</td>
+					<td><input type="radio" value="SKT" checked />SKT <input
+						type="radio" value="KTF">KTF <input type="radio"
+						value="LGT">LGT</td>
+				</tr>
+
+				<tr>
+					<td colspan="3">전화번호나 휴대폰번호 2가지 중 하나는 반드시 입력하셔야 합니다.</td>
+				</tr>
+
+				<tr>
+					<td style="background: silver">*거주지주소</td>
+					<td colspan="3"><input type="button" name="거주지주소" value="(국내)">
+						<input type="button" name="거주지주소" value="(국외)"> <input
+						type="text" name="거주지주소" /></td>
+				</tr>
+			</table>
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+</form>
+
+</body>
+</html>

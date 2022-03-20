@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>MyHomeWork</display-name>
+	 
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+	
+	<servlet>
+		<servlet-name>FindUser</servlet-name>
+		<servlet-class>svt.FindUser</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>FindUser</servlet-name>
+		<url-pattern>/FindUser</url-pattern>
+	</servlet-mapping>
+	
+
+	
+	
+	<servlet>
+		<servlet-name>AddUser</servlet-name>
+		<servlet-class>svt.AddUser</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>AddUser</servlet-name>
+		<url-pattern>/AddUser</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Work</servlet-name>
+		<servlet-class>Work</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Work</servlet-name>
+		<url-pattern>/Work</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CookieReaderToServer</servlet-name>
+		<servlet-class>CookieReaderToServer</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>CookieReaderToServer</servlet-name>
+		<url-pattern>/CookieReaderToServer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CookieWriterToClient</servlet-name>
+		<servlet-class>CookieWriterToClient</servlet-class>
+	</servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>CookieWriterToClient</servlet-name>
+		<url-pattern>/CookieWriterToClient</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginBeanDataSourceSession</servlet-name>
+		<servlet-class>LoginBeanDataSourceSession</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>LoginBeanDataSourceSession</servlet-name>
+		<url-pattern>/LoginBeanDataSourceSession</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SessionUseCookieTwo</servlet-name>
+		<servlet-class>SessionUseCookieTwo</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>SessionUseCookieTwo</servlet-name>
+		<url-pattern>/SessionUseCookieTwo</url-pattern>
+	</servlet-mapping>
+
+
+
+  <resource-ref>
+			<res-ref-name>jdbc/ora</res-ref-name>
+			<res-type>javax.sql.DataSource</res-type>
+			 <res-auth>Container</res-auth>
+		</resource-ref>
+		
+	<error-page>
+		<error-code>405</error-code>
+		<location>/jw05/405ErrorDisplay.html</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/NullErrorDisplay</location>
+	</error-page>
+</web-app>

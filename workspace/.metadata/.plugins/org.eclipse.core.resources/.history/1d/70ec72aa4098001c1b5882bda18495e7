@@ -1,9 +1,0 @@
-package prob_0228;
-
-public class FileController {
-
-	public FileController() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
